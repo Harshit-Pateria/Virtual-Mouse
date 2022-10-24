@@ -31,7 +31,7 @@ while True:
 
     if len(pos) != 0:
         fingers = d.fingers_up()
-        x1,y1 = pos[9][:2]
+        x1,y1 = pos[9][:2] 
         #COMMANDS
         if fingers[1] == 1 and fingers.count(1) == 1 and flag == 0:
             pyautogui.click()   
@@ -50,7 +50,7 @@ while True:
                 prev_x, prev_y = x, y
                 move = 0
             pyautogui.moveRel((x - prev_x) ,(y - prev_y))
-            prev_x, prev_y = x2,y2
+            prev_x, prev_y = x,y
     
     cv2.imshow("Image", img)
         
